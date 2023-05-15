@@ -20,7 +20,11 @@ func GetItem(slice []int, index int) int {
 // SetItem writes an item to a slice at given position overwriting an existing value.
 // If the index is out of range the value needs to be appended.
 func SetItem(slice []int, index, value int) []int {
-	panic("Please implement the SetItem function")
+	for i, v := range slice {
+		if i == index {
+			return 
+		}
+	}
 }
 
 // PrependItems adds an arbitrary number of values at the front of a slice.
